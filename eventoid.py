@@ -6,7 +6,10 @@
 #   4. TODO: someday they might be asked to clean-up via deinit() if unregistered
 #
 # Written by Eric B. Wertz (eric@edushields.com)
-# Last modified 22-Apr-2022 17:38
+# Last modified 18-Sep-2022 17:27
+
+class EventoidException(Exception):
+    pass
 
 class Eventoid:
 

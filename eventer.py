@@ -5,16 +5,13 @@
 #   off to prevent it from being corrupted by interrupt-induced race conditions.
 #
 # Written by Eric Wertz (eric@edushields.com)
-# Last modified 27-Apr-2022 19:27
+# Last modified 18-Sep-2022 15:49
 
 import micropython, machine, time
 
 micropython.alloc_emergency_exception_buf(100)
 
 class StateMachineException(Exception):
-    pass
-
-class EventoidException(Exception):
     pass
 
 class EventerException(Exception):
